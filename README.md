@@ -38,6 +38,7 @@
     - [Create User Profile](#create-user-profile)
     - [Update User Profile](#update-user-profile)
     - [Update Avatar](#update-avatar)
+  - [License](#license)
 
 # AnimeW API
 
@@ -254,6 +255,10 @@ rating greater than or equal to 9.
 - Endpoint: `/profile/avatar`
 - Method: `POST`
 - Description: Updates the user's avatar. The avatar URL should be provided in Base64 format.
+
+## License
+
+The AnimeW API is released under the [MIT License](LICENSE).
 
 ---
 

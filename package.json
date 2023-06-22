@@ -4,13 +4,12 @@
   "description": "",
   "main": "./build/sever.js",
   "engines": {
-    "node": "18.x"
+    "node": "16.x"
   },
   "scripts": {
-    "build": "rimraf -rf ./build && tsc",
-    "start": "ts-node -r tsconfig-paths/register src/sever.ts",
-    "dev": "nodemon --exec ts-node --require tsconfig-paths/register ./src/sever.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf ./build && tsc",
+    "start": "node ./build/sever.js",
+    "dev": "nodemon ./src/sever.ts"
   },
   "author": "luanthnh",
   "license": "ISC",
@@ -24,8 +23,8 @@
     "jsonwebtoken": "^9.0.0",
     "module-alias": "^2.2.2",
     "mongoose": "^7.2.0",
-    "multer": "^1.4.5-lts.1",
-    "uuid": "^9.0.0"
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
