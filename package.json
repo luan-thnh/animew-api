@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "./build/sever.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "build": "rimraf -rf ./build && tsc",
     "start": "ts-node -r tsconfig-paths/register src/sever.ts",
