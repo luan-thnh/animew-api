@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import { FilterQuery } from 'mongoose';
-import { HttpError } from 'middleware/errorHandler';
-import { AuthenticatedRequest } from 'middleware/verifyToken';
-import AnimeModel, { IAnime } from 'models/animeModel';
+import { HttpError } from '../middleware/errorHandler';
+import { AuthenticatedRequest } from '../middleware/verifyToken';
+import AnimeModel, { IAnime } from '../models/animeModel';
 
 export const getAnimes = async (req: Request, res: Response, next: NextFunction) => {
   try {

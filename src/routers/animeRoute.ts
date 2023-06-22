@@ -5,21 +5,21 @@ import {
   searchAnimes,
   popularAnimes,
   topAnime,
-} from 'controllers/animeController';
-import { getEpisodes } from 'controllers/episodeController';
+} from '../controllers/animeController';
+import { getEpisodes } from '../controllers/episodeController';
 import {
   addAnimeToHistory,
   getAnimeHistory,
   removeAnimeFromHistory,
   updateWatchedMinutes,
-} from 'controllers/historyController';
+} from '../controllers/historyController';
 import {
   getAnimeWatchList,
   addAnimeToWatchList,
   removeAnimeFromWatchList,
-} from 'controllers/watchListController';
-import { checkCurrentUser } from 'middleware/checkCurrentUser';
-import { checkGuestUser } from 'middleware/checkGuestUser';
+} from '../controllers/watchListController';
+import { checkCurrentUser } from '../middleware/checkCurrentUser';
+import { checkGuestUser } from '../middleware/checkGuestUser';
 
 const router = Router();
 

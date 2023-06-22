@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { getCurrentUser, deleteUser, register, login } from 'controllers/authController';
-import { checkCurrentUser } from 'middleware/checkCurrentUser';
-import { verifyToken } from 'middleware/verifyToken';
-import { checkGuestUser } from 'middleware/checkGuestUser';
+import { getCurrentUser, deleteUser, register, login } from '../controllers/authController';
+import { checkCurrentUser } from '../middleware/checkCurrentUser';
+import { verifyToken } from '../middleware/verifyToken';
+import { checkGuestUser } from '../middleware/checkGuestUser';
 
 const router = Router();
 

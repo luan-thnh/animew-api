@@ -4,18 +4,18 @@ import dotenv from 'dotenv';
 const envPath = path.join(__dirname, '..', 'env', '.env');
 dotenv.config({ path: envPath });
 
-import { connect } from 'configs/connect_db';
+import { connect } from './configs/connect_db';
 connect();
 
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import authRoute from 'routers/authRoute';
-import adminRoute from 'routers/adminRoute';
-import animeRoute from 'routers/animeRoute';
-import commentRoute from 'routers/commentRoute';
-import profileRoute from 'routers/profileRoute';
-import { errorHandler, HttpError } from 'middleware/errorHandler';
+import authRoute from './routers/authRoute';
+import adminRoute from './routers/adminRoute';
+import animeRoute from './routers/animeRoute';
+import commentRoute from './routers/commentRoute';
+import profileRoute from './routers/profileRoute';
+import { errorHandler, HttpError } from './middleware/errorHandler';
 
 const app = express();
 

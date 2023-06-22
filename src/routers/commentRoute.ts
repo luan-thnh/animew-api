@@ -1,11 +1,11 @@
 import { Router } from 'express';
-import { checkCurrentUser } from 'middleware/checkCurrentUser';
+import { checkCurrentUser } from '../middleware/checkCurrentUser';
 import {
   createComment,
   deleteComment,
   getCommentsByAnimeId,
   updateComment,
-} from 'controllers/commentController';
+} from '../controllers/commentController';
 
 const router = Router();
 

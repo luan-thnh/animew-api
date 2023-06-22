@@ -1,10 +1,10 @@
 import { Request, Response, NextFunction } from 'express';
-import { HttpError } from 'middleware/errorHandler';
-import { AuthenticatedRequest } from 'middleware/verifyToken';
-import { GuestUserRequest } from 'middleware/checkGuestUser';
+import { HttpError } from '../middleware/errorHandler';
+import { AuthenticatedRequest } from '../middleware/verifyToken';
+import { GuestUserRequest } from '../middleware/checkGuestUser';
 import { addAnimeToHistory } from './historyController';
-import AnimeModel from 'models/animeModel';
-import EpisodeModel, { IEpisode } from 'models/episodeModel';
+import AnimeModel from '../models/animeModel';
+import EpisodeModel, { IEpisode } from '../models/episodeModel';
 
 export const getEpisodes = async (req: GuestUserRequest, res: Response, next: NextFunction) => {
   try {

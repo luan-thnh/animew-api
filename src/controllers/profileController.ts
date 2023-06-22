@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import ProfileModel, { IProfile } from '../models/profileModel';
-import { AuthenticatedRequest } from 'middleware/checkCurrentUser';
-import { HttpError } from 'middleware/errorHandler';
-import UserModel from 'models/userModel';
+import { AuthenticatedRequest } from '../middleware/checkCurrentUser';
+import { HttpError } from '../middleware/errorHandler';
+import UserModel from '../models/userModel';
 
 export const getProfile = async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
   try {

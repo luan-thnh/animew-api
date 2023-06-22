@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { AuthenticatedRequest } from 'middleware/checkCurrentUser';
-import { HttpError } from 'middleware/errorHandler';
-import CommentModel from 'models/commentModel';
+import { AuthenticatedRequest } from '../middleware/checkCurrentUser';
+import { HttpError } from '../middleware/errorHandler';
+import CommentModel from '../models/commentModel';
 
 export const getCommentsByAnimeId = async (req: Request, res: Response, next: NextFunction) => {
   try {

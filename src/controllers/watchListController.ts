@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
-import { AuthenticatedRequest } from 'middleware/checkCurrentUser';
-import { HttpError } from 'middleware/errorHandler';
-import UserModel from 'models/userModel';
-import WatchListModel, { IWatchList } from 'models/watchListModel';
+import { AuthenticatedRequest } from '../middleware/checkCurrentUser';
+import { HttpError } from '../middleware/errorHandler';
+import UserModel from '../models/userModel';
+import WatchListModel, { IWatchList } from '../models/watchListModel';
 
 export const getAnimeWatchList = async (
   req: AuthenticatedRequest,

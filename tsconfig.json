@@ -3,9 +3,9 @@
     "target": "ESNext",
     "module": "commonjs",
     "baseUrl": ".",
-    "paths": {
-      "*": ["src/*"]
-    },
+    // "paths": {
+    //   "*": ["src/*"]
+    // },
     "outDir": "./build",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { verifyToken } from 'middleware/verifyToken';
-import { createAnime, updateAnime, deleteAnime } from 'controllers/animeController';
-import { createEpisode, deleteEpisode, updateEpisode } from 'controllers/episodeController';
-import { getAllUser } from 'controllers/authController';
+import { verifyToken } from '../middleware/verifyToken';
+import { createAnime, updateAnime, deleteAnime } from '../controllers/animeController';
+import { createEpisode, deleteEpisode, updateEpisode } from '../controllers/episodeController';
+import { getAllUser } from '../controllers/authController';
 
 const router = Router();
 

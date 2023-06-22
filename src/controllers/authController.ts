@@ -1,13 +1,13 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
-import UserModel from 'models/userModel';
-import HistoryModel from 'models/historyModel';
-import { HttpError } from 'middleware/errorHandler';
-import { AuthenticatedRequest } from 'middleware/verifyToken';
-import { AuthenticatedRequest as AuthenticatedRequestCurrent } from 'middleware/checkCurrentUser';
-import { GuestUserRequest } from 'middleware/checkGuestUser';
-import ProfileModel, { IProfile } from 'models/profileModel';
+import UserModel from '../models/userModel';
+import HistoryModel from '../models/historyModel';
+import { HttpError } from '../middleware/errorHandler';
+import { AuthenticatedRequest } from '../middleware/verifyToken';
+import { AuthenticatedRequest as AuthenticatedRequestCurrent } from '../middleware/checkCurrentUser';
+import { GuestUserRequest } from '../middleware/checkGuestUser';
+import ProfileModel, { IProfile } from '../models/profileModel';
 
 export const getCurrentUser = async (
   req: AuthenticatedRequestCurrent,

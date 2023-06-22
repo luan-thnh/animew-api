@@ -1,11 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
-import { HttpError } from 'middleware/errorHandler';
+import { HttpError } from '../middleware/errorHandler';
 import { AuthenticatedRequest } from './../middleware/checkCurrentUser';
-import HistoryModel, { IHistory } from 'models/historyModel';
-import UserModel from 'models/userModel';
-import AnimeModel from 'models/animeModel';
-import { IEpisode } from 'models/episodeModel';
-import { GuestUserRequest } from 'middleware/checkGuestUser';
+import HistoryModel, { IHistory } from '../models/historyModel';
+import UserModel from '../models/userModel';
+import AnimeModel from '../models/animeModel';
+import { IEpisode } from '../models/episodeModel';
+import { GuestUserRequest } from '../middleware/checkGuestUser';
 import mongoose, { ObjectId, Types } from 'mongoose';
 
 export const getAnimeHistory = async (

@@ -1,11 +1,11 @@
 import { Router } from 'express';
-import { checkCurrentUser } from 'middleware/checkCurrentUser';
+import { checkCurrentUser } from '../middleware/checkCurrentUser';
 import {
   createProfile,
   getProfile,
   updateAvatar,
   updateProfile,
-} from 'controllers/profileController';
+} from '../controllers/profileController';
 import multer from 'multer';
 
 const router = Router();
